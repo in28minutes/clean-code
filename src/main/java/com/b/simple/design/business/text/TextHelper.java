@@ -9,9 +9,4 @@ public class TextHelper {
 	public String truncateAInFirst2Positions(String str) {
 		return null;
 	}
-
-	public String truncateFirst2CharactersExceptAB(String str) {
-		return null;
-	}
-
 }
