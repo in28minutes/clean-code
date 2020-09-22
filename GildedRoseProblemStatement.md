@@ -31,3 +31,6 @@ The Gilded Rose buys and sells only the finest goods. Unfortunately, most goods 
 - Step I  : Improve clarity of GildedRoseADefaultItemTest.java
 - Step II : Improve clarity of GildedRoseBAgedBrieTest.java
 - Step III: Improve clarity of GildedRoseCBackstagePassesTest.java
+
+#### Warning
+- The documentation is out-dated!
