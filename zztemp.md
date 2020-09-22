@@ -1,5 +1,5 @@
 
-```
+```java
 package com.a.introduction.gildedrose;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
