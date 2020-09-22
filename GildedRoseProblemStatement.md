@@ -1,5 +1,9 @@
 ## Introduction
 
+Gilded Rose Refactoring Kata was originally created by Terry Hughes (http://twitter.com/TerryHughes).
+
+## Problem Statement
+
 The Gilded Rose buys and sells only the finest goods. Unfortunately, most goods are constantly degrading in quality as they approach their sell by date.
 
 ### Current System Behavior
