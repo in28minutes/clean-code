@@ -23,9 +23,9 @@ The Gilded Rose buys and sells only the finest goods. Unfortunately, most goods 
 #### Rules for Specific Items - Specific Exceptions:
 - "Aged Brie" actually increases in Quality the older it gets 
 - "Backstage passes", like aged brie, increases in Quality as it's SellIn value approaches;
-	a.	increases by 2 when there are 10 days or less
-	b.	increases by 3 when there are 5 days or less
-	c.	drops to 0 after the concert 
+	- increases by 2 when there are 10 days or less
+	- increases by 3 when there are 5 days or less
+	- drops to 0 after the concert 
 
 ## Exercises
 - Step I  : Improve clarity of GildedRoseADefaultItemTest.java
