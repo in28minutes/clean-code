@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/fb/!svn/ver/12323/projects/reports/corporate/proposal/proposal-letter/trunk/business/src/test/resources
+END
+ReportBusinessIntegerationTestData.sql
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/fb/!svn/ver/8729/projects/reports/corporate/proposal/proposal-letter/trunk/business/src/test/resources/ReportBusinessIntegerationTestData.sql
+END
+reportBusinessTest-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/fb/!svn/ver/12323/projects/reports/corporate/proposal/proposal-letter/trunk/business/src/test/resources/reportBusinessTest-config.xml
+END
+reportBusinessIntegrationTest-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/fb/!svn/ver/12323/projects/reports/corporate/proposal/proposal-letter/trunk/business/src/test/resources/reportBusinessIntegrationTest-config.xml
+END
