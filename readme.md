@@ -1,20 +1,10 @@
 # Clean Code with Java: Learn Simple Design, Refactoring & TDD
 
-https://www.udemy.com/course/serverless-tutorial-aws-lambda-and-azure-functions/?couponCode=LAUNCH
-
-https://links.in28minutes.com/serverless-linkedin
-https://links.in28minutes.com/serverless-email
-https://links.in28minutes.com/serverless-yt
-
-
-
-https://www.udemy.com/course/serverless-tutorial-aws-lambda-and-azure-functions/?referralCode=FEE4D6C2FE67B6F1C228
-
-https://links.in28minutes.com/serverless-sbt
-https://links.in28minutes.com/serverless-learn
-https://links.in28minutes.com/serverless-other
-
 Learn to Write Clean Code with Java. Get Hands-on with 20+ Code Examples involving 4 principles of Simple Design, Refactoring & TDD.
+
+## Todos
+
+## Course Notes
 
 This will be exercise based course. You cannot learn to write great code without trying it yourselves. So, before looking at the solution video, I urge you to try it yourselves.
 
