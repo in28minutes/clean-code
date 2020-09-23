@@ -36,7 +36,7 @@ public class CustomerBOImpl implements CustomerBO {
 		for (Product product : products) {
 			temp = temp.add(product.getAmount().getValue());
 		}
-
+		
 		// Create new product
 		return new AmountImpl(temp, firstProductCurrency);
 	}

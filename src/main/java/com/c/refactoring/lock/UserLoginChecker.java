@@ -29,30 +29,25 @@ public class UserLoginChecker {
                             || userId.equalsIgnoreCase(user.getUserId())) {
                         //to set the  access to write mode
                         lck.setRead(false);
-                        //Log.debug("Write access to {0}",id);
                         return lck;
                     }
                     lck.setRead(true);
                     //Only read access is permitted to other user
                     lck.setLockReason(lockMsg);
-                    //Log.debug("Read only to {0}",id);
                     return lck;
                 } else if (userId.equalsIgnoreCase(user.getUserId())) {
                     // Locked By Same User, Write access
                     lck.setRead(false);
-                    //Log.debug("Locked By Same User, Write access is permitted for {0}",id);
                     return lck;
                 } else {
                     lck.setRead(true);
                     //Only Read Access is Permitted
                     lck.setLockReason(lockMsg);
-                    //Log.debug("Only Read Access is Permitted for {0}",id);
                     return lck;
                 }
             }
         }
         lck.setRead(false);
-        //Log.debug("Locked By new User for {0}", id);
         return lck;
     }
 }

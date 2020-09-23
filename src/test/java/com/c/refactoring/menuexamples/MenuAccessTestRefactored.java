@@ -52,23 +52,6 @@ public class MenuAccessTestRefactored {
 		assertMenuItemIsWritable(actual);
 	}
 
-	@Test
-	public void testSetAuthorizationsInEachMenus_UserHasNoRoles() {
-
-		Role[] userRoles = {};
-
-		List<MenuItem> menuItems = Arrays.asList(MENU_A);
-
-		menuAccess.setAuthorizationsInEachMenus(menuItems, userRoles);
-
-		assertNoAccessToMenuItem(menuItems.get(0));
-	}
-
-	private void assertNoAccessToMenuItem(MenuItem actual) {
-		assertEquals(null, actual.getAccess());
-		assertEquals(false, actual.isVisible());
-	}
-
 	private void assertMenuItemIsWritable(MenuItem actual) {
 		assertEquals(Constants.WRITE, actual.getAccess());
 		assertEquals(true, actual.isVisible());
