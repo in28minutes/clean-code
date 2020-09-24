@@ -10,9 +10,6 @@ Learn to Write Clean Code with Java. Get Hands-on with Code Examples involving 4
 ### Exercises
 
 #### GildedRose
-<!-- .slide: class="one30 image-right image-twenty" -->
-![](./images/03-clean-code/practice.png)
-
 - Goal 
 	- Understand **Clarity of Code**
 	- Give **importance** to Unit Testing
