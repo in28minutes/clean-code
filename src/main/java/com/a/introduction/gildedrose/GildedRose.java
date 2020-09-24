@@ -3,6 +3,7 @@ package com.a.introduction.gildedrose;
 import java.util.Arrays;
 
 class GildedRose {
+	
 	Item[] items;
 
 	public GildedRose(Item[] items) {
