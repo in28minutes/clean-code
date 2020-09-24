@@ -16,6 +16,7 @@ Learn to Write Clean Code with Java. Get Hands-on with Code Examples involving 4
 - `GildedRoseADefaultItemTest.java`
 - `GildedRoseBAgedBrieTest.java`
 - `GildedRoseCBackstagePassesTest.java`
+- More details - [Gilded Rose Exercises](https://github.com/in28minutes/clean-code/blob/master/GildedRoseProblemStatement.md)
 
 #### 4 Principles of Simple Design
 - Refactor Code
@@ -37,3 +38,9 @@ Learn to Write Clean Code with Java. Get Hands-on with Code Examples involving 4
 #### Try on Your Own (With Solutions)
 - `UserLoginCheckerTest`
 - `MenuAccessTest`
+
+#### TDD
+- More details - [TDD Exercises](https://github.com/in28minutes/clean-code/blob/master/tdd.md)
+- Truncate A in first 2 positions of a String
+- Check if first two and last two characters in the string are the same.
+- Bowling Kata
