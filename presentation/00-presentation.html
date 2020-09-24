@@ -54,7 +54,7 @@
 
 ---
 <!-- .slide: class="center one50" -->
-#### "The man who is going to maintain your code is a phycho who knows where you stay"
+#### "The man who is going to maintain your code is a psycho who knows where you stay"
 
 ---
 ## Bad Code
@@ -165,7 +165,7 @@
 - Use Key Board
 - Ask Why?
 - Work with smart people
-- Understand All Tools - Jshell, Maven, Gradle etc
+- Understand All Tools - IDE, JShell, Maven, Gradle etc
 - Play with other languages and frameworks
 - Understand different programming approaches - Object Oriented, Functional Programming, Structured etc.
 
@@ -360,7 +360,7 @@
 	- Should indicate the condition being tested and (if needed) the result
 		- `testClientProductSum_AllProductsSameCurrency` vs `testClientProductSum`
 		- `testClientProductSum_DifferentCurrencies_ThrowsException` vs `testClientProductSum1`
-	- Keyword test at start of method name is now superfluous. (Junit 4 does not need it.)
+	- Keyword test at start of method name is now superfluous. (JUnit 4 does not need it.)
 - Highlight values important to the test
 - One condition per test
 - No Exception Handling in a test method.
@@ -372,10 +372,10 @@
 
 - No dependencies between test conditions.
 	- Don't assume the order in which tests would run.
-- Avoid External Dependancies
+- Avoid External Dependencies
 	- Avoid depending on (db, external interface,network connection,container).. Use Stubs/Mocks.
 - Avoid depending on system date and random.
-	- Avoid hardcoding of paths (“C:\\TestData\\dataSet1.dat”);//Runs well on my machine..
+	- Avoid hard-coding of paths (“C:\\TestData\\dataSet1.dat”);//Runs well on my machine..
 
 ---
 ## Principle 3 : Test's should find all defect's in code
@@ -389,7 +389,7 @@
 	- Test Boundary Conditions.
 - Use Strong Assertions
 	- Do not write “Tests for Coverage”
-- Favorite maxim from Junit FAQ
+- Favorite maxim from JUnit FAQ
 	- “Test until fear turns to boredom.”
 
 ---
