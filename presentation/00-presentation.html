@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Clean Code</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css" id="theme">
+	<link rel="stylesheet" href="css/reveal-override.css" />
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+
+
+			<!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
+			<section data-markdown data-separator="---">
+
+				<script type="text/template">
+
+<!-- .slide: class="center one50" -->
+# Learn Clean Code
+#### Simple Design, Refactoring & TDD
+
+---
+<!-- .slide: class="center one50" -->
+#### "The man who is going to maintain your code is a phycho who knows where you stay"
+
+---
+## Bad Code
+<!-- .slide: class="center one50" -->
+![](./images/03-clean-code/bad-code.png)
+
+---
+## Better Code
+<!-- .slide: class="center one50" -->
+![](./images/03-clean-code/good-code.png)
+
+---
+<!-- .slide: class="center one50" -->
+![](./images/in28minutes.png)
+---
+<!-- .slide: class="center one50" -->
+![](./images/in28minutes-courses.png)
+---
+## Approach - Clean Code
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/clean-code.png)
+- Hands-on
+- Focuses on Basics
+- Designed for all levels of programmers
+	- Simple examples to start with 
+
+---
+<!-- .slide: class="center one50" -->
+### Solve + Watch + Retry = Best Results
+
+---
+## Goal - Clean Code
+<!-- .slide: class="one30 image-right image-twenty" -->
+
+> Help you get started with writing clean code
+
+![](./images/03-clean-code/clean-code.png)
+
+- **Step I** : Understand Clarity of Code (Unit Tests)
+- **Step II**: Focus on 4 Principles of Simple Design
+- **Step III**: Get started with Refactoring
+- **Step IV** : Understand TDD
+
+---
+## GildedRose
+<!-- .slide: class="one30 image-right image-twenty" -->
+![](./images/03-clean-code/practice.png)
+
+- Goal 
+	- Understand **Clarity of Code**
+	- Give **importance** to Unit Testing
+- Exercises
+	- `GildedRoseADefaultItemTest.java`
+	- `GildedRoseBAgedBrieTest.java`
+	- `GildedRoseCBackstagePassesTest.java`
+
+---
+## Attitude - This Course
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/clean-code.png)
+- Designed for all levels of programmers
+	- Simple examples to start with 
+	- Not focusing on Object Orientation
+- Provide a Playground
+	- Solutions are secondary! Practice!
+- Getting to 90% is important
+	- Agree to Disagree.
+	- Not important to argue about the remaining 10%
+---
+
+## Most Difficult Challenge in Programming
+
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/clean-code.png)
+
+- Naming!
+	- Creating good names is hard 
+	- Make names as long as necessary
+	- Length of variable name is inversely proportional to scope
+	- Follow conventions
+		- Packages, Classes, Interfaces, Methods, Variables, Constants
+		- Project specific (get vs retrieve vs ..)
+
+---
+## Comments
+
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/clean-code.png)
+
+- Different Types
+	- Type 1 : API Comments
+	- Type 2 : Comments to help other programmers understand your code
+	- Type 3 : TODO, FIXME
+- Use Type 1 and Type 3 liberally!
+- Type 2 should focus on Why but not what? 
+	- ex: Sorting, Performance Optimizations
+
+
+---
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/clean-code.png)
+
+## 10 Tips - Good Programmer
+- Pair Programming
+- Boy Scout Rule
+- Continuous Learning
+- Learn Touch Typing
+- Use Key Board
+- Ask Why?
+- Work with smart people
+- Understand All Tools - Jshell, Maven, Gradle etc
+- Play with other languages and frameworks
+- Understand different programming approaches - Object Oriented, Functional Programming, Structured etc.
+
+---
+<!-- .slide: class="one50 center" -->
+### 4 Principles of Simple Design
+#### Keep Your Design Simple
+
+---
+
+## Why Simple Design?
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/principles.png)
+
+- Agile & Extreme Programming
+	- Focus on **Today's** Requirements => Do them well
+	- Change is **expected**
+	- No Big Design Up Front
+- Good Goals for Starting Programmers
+- Design vs Architecture
+	- **Architecture** - Difficult to change
+	- **Design** - Easier to change
+
+---
+## Four Principles of Simple Design
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/principles.png)
+
+- Runs all tests
+- Minimize Duplication
+- Maximize Clarity
+- Keep it small
+---
+## Runs all tests
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/principles.png)
+
+- Code should work!
+- (Recommended) Have automated tests
+- Design evolves (NOT created in one day)
+	- Without Automation Tests, Developers are reluctant to make changes
+- (Recommended) TDD leads to Better Tests and Better Design
+
+---
+## Minimize Duplication
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/principles.png)
+
+- Does this need explanation?
+- Duplication leads to:
+	- More Bugs
+	- More Maintenance
+
+---
+## Maximize Clarity
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/principles.png)
+
+- Code we write today will be maintained by someone else later
+	- That someone might be YOU a couple of months later!
+- Good Starting Point
+	- Focus on Naming - Methods, Variables, Classes etc
+
+---
+## Keep it small
+<!-- .slide: class="one30 image-right image-twenty" -->
+![](./images/03-clean-code/principles.png)
+
+- Effort involved in making something perfect is high
+	- Effort to Improve Design: 90 to 99 GREATER THAN 60 to 90
+- Does that effort give you significant returns?
+	- Extra layer => Additional Complexity
+	- Extra Code => More code to maintain
+- Keep things simple and small
+---
+## Summary
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/principles.png)
+
+- Simplest possible testable approach while 
+	- Maximizing clarity and 
+	- Reducing duplication
+
+---
+## 4 Principles of Simple Design - Hands-on
+<!-- .slide: class="one30 image-right image-twenty" -->
+![](./images/03-clean-code/practice.png)
+- Exercises
+	- Refactor Code
+		- `StudentHelper.isGradeB()`
+		- `StudentHelper.getGrade()`
+		- `StudentHelper.willQualifyForQuiz()`
+	- Write Code
+		- `TextHelper.swapLastTwoCharacters()`
+		- `TextHelper.truncateAInFirst2Positions()`
+	- Refactor Unit Test
+		- `CustomerBOTest`
+
+---
+## Refactoring
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/refactoring.png)
+- Altering Structure of Code without affecting "Behavior"
+- Toughest part of Refactoring is the order or sequencing of steps
+- Continuous Refactoring aided by Tests - Leads to "Clean Code"
+
+---
+## Refactoring - Best Practices
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/refactoring.png)
+- Have Unit Tests
+- Take small steps
+- Run tests at each step
+
+---
+## Refactoring - Hands-On
+<!-- .slide: class="image-right image-twenty" -->
+![](./images/03-clean-code/practice.png)
+- Exercises
+	- `CustomerBOImpl.getCustomerProductsSum(List<Product>)`
+	- `Movie.isValidRating()`
+	- `MenuAccess.setAuthorizationsInEachMenus(List<MenuItem>, Role[])`
+	- `UserLoginChecker.isUserAllowedToLogin(long, String, boolean, User, List)`
+
+---
+<!-- .slide: class="one50 center" -->
+### Test Driven Development
+#### Do the opposite!
+
+---
+## TDD - Three Steps
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/principles.png)
+
+- RED
+	- Write a simple test that fails
+- GREEN
+	- Write simple code to make it succeed
+- REFACTOR
+	- Make code adhere to "4 Principles of Simple Design" 
+	- While keeping it Green
+
+---
+## TDD - Three Laws
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/principles.png)
+
+1. No Production Code without Failing Test
+2. Just enough test to make code fail
+3. Just enough code to make test pass
+
+---
+## TDD - Three Tips
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/principles.png)
+
+1. Unlearn
+2. Practices Makes You Perfect
+	- Takes Time (2 to 3 months)
+3. Get a Mentor
+
+---
+## Unit Testing Organization/Attitude 
+<!-- .slide: class="one40 image-right image-twenty" -->
+![](./images/03-clean-code/unit-test.png)
+
+- More important than Code.
+	- Lead to Better Design (due to Continuous Refactoring)
+- Best written before Code (TDD ).
+	- TDD improves Design and Code Quality
+- Separated from Production Code
+- Find Defects Early
+	- Continuous Integration
+
+---
+## Unit Testing Principles
+<!-- .slide: class="one30 image-right image-twenty" -->
+![](./images/03-clean-code/unit-test.png)
+
+- Easy to understand
+	- Test should take no longer than 15 seconds to read
+- Test should fail only when there is a problem with production code
+- Tests should find all problems with production code
+- Tests should have as minimum duplication as possible
+- Should run quickly
+
+---
+## Principle 1: Easy to understand
+<!-- .slide: class="one20 image-right image-twenty" -->
+![](./images/03-clean-code/unit-test.png)
+- Name of the Unit Test
+	- Should indicate the condition being tested and (if needed) the result
+		- `testClientProductSum_AllProductsSameCurrency` vs `testClientProductSum`
+		- `testClientProductSum_DifferentCurrencies_ThrowsException` vs `testClientProductSum1`
+	- Keyword test at start of method name is now superfluous. (Junit 4 does not need it.)
+- Highlight values important to the test
+- One condition per test
+- No Exception Handling in a test method.
+
+---
+## Principle 2 : Fail only when there is a defect in CUT (Code Under Test)
+<!-- .slide: class="one10 image-right image-twenty" -->
+![](./images/03-clean-code/principles.png)
+
+- No dependencies between test conditions.
+	- Don't assume the order in which tests would run.
+- Avoid External Dependancies
+	- Avoid depending on (db, external interface,network connection,container).. Use Stubs/Mocks.
+- Avoid depending on system date and random.
+	- Avoid hardcoding of paths (“C:\\TestData\\dataSet1.dat”);//Runs well on my machine..
+
+---
+## Principle 3 : Test's should find all defect's in code
+
+<!-- .slide: class="one20 image-right image-twenty" -->
+![](./images/03-clean-code/unit-test.png)
+
+- Why else do we write test :)
+- Test everything that could possibly break.
+	- Test Exceptions.
+	- Test Boundary Conditions.
+- Use Strong Assertions
+	- Do not write “Tests for Coverage”
+- Favorite maxim from Junit FAQ
+	- “Test until fear turns to boredom.”
+
+---
+## Principle 4 : Less Duplication 
+<!-- .slide: class="one20 image-right image-twenty" -->
+![](./images/03-clean-code/unit-test.png)
+
+- No Discussion on this :)
+
+---
+## Principle 5 : Test's should run quickly
+<!-- .slide: class="one20 image-right image-twenty" -->
+![](./images/03-clean-code/unit-test.png)
+- (FACT) Long running tests are NOT run often
+	- Avoid reading from File System or Network
+- A temporary solution might be to “collect long running tests into a separate test suite” and run it less often.
+---
+## Result : Tests as Documentation
+<!-- .slide: class="one20 image-right image-twenty" -->
+![](./images/03-clean-code/unit-test.png)
+- Well written tests act as great documentation
+- Examples:
+	- `testClientProductSum_AllProductsSameCurrency`
+	- `testClientProductSum_DifferentCurrencies_ThrowsException`
+	- `testClientProductSum_NoProducts`
+
+---
+## Try on Your Own (With Solutions)
+- `UserLoginCheckerTest`
+- `MenuAccessTest`
+
+---
+<!-- .slide: class="center" -->
+# You are all set!
+---
+<!-- .slide: class="one50" -->
+## Let's clap for you!
+- You have a lot of patience! Congratulations
+- You have put your best foot forward to get started with Clean Code
+- Good Luck!
+
+---
+## Do Not Forget!
+<!-- .slide: class="one30 image-right image-fifty" -->
+![](./images/remember.png)
+
+- Clean Code is a Journey
+- Recommend the course to your team!
+	- Do not forget to review!
+- Your Success = My Success
+	- Share your success story with me on LinkedIn (Ranga Karanam)
+	- Share your success story and lessons learnt in Q&A with other learners!
+
+---
+## Three book I recommend
+<!-- .slide: class="one30 image-right image-fifty" -->
+![](./images/remember.png)
+
+- Code Complete by Steve McConnell.
+- The Pragmatic Programmer: From Journeyman to Master by Andrew Hunt
+- Effective Java (3rd Edition) by Joshua Bloch
+
+                    </script>
+			</section>
+
+		</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+
+	<script>
+
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			// The "normal" size of the presentation, aspect ratio will be preserved
+			// when the presentation is scaled to fit different resolutions
+			width: 1200,
+			height: 700,
+
+			// Factor of the display size that should remain empty around the content
+			margin: 0.04,
+
+			// Bounds for smallest/largest possible scale to apply to content
+			minScale: 0.2,
+			maxScale: 2.0,
+
+			controls: false,
+			progress: false,
+			history: true,
+			center: false,
+			slideNumber: true,
+			fragments: false,
+			transition: 'none', // none/fade/slide/convex/concave/zoom
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+
+
+	</script>
+
+</body>
+
+</html>
