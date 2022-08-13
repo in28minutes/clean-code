@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-public class GildedRoseADefaultItemTest {
+public class GildedRoseARefactorTest {
 	/**
 	 * Method to test the variation in quality of the item for the non expired
 	 * Item.
