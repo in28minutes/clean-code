@@ -45,6 +45,49 @@ public class GildedRoseARefactorTest {
 
 	}
 
+	// ================ Adding B Aged Brie Tests  ========================
+
+
+	@Test
+	public void testUpdateQualityAgedBrie1() {
+		Item item = new Item("Aged Brie", 4, 3);
+		Item[] items = new Item[] { item };
+		GildedRose app = new GildedRose(items);
+		app.updateQuality();
+		assertEquals("Aged Brie", app.items[0].name);
+		assertEquals(3, app.items[0].sellIn);
+		assertEquals(4, app.items[0].quality);
+	}
+
+	@Test
+	public void testUpdateQualityAgedBrie2() {
+		Item item = new Item("Aged Brie", -1, 3);
+		Item[] items = new Item[] { item };
+		GildedRose app = new GildedRose(items);
+		app.updateQuality();
+		assertEquals("Aged Brie", app.items[0].name);
+		assertEquals(-2, app.items[0].sellIn);
+		assertEquals(5, app.items[0].quality);
+	}
+
+	@Test
+	public void testUpdateQualityAgedBrie3() {
+		Item item = new Item("Aged Brie", 4, 50);
+		Item[] items = new Item[] { item };
+		GildedRose app = new GildedRose(items);
+		app.updateQuality();
+		assertEquals("Aged Brie", app.items[0].name);
+		assertEquals(3, app.items[0].sellIn);
+		assertEquals(50, app.items[0].quality);
+	}
+
+	// ============ Hasta aquí B Aged Brie Test  ================================
+
+
+
+
+
+
 	private void assertItem(Item expected, Item actual) {
 		assertEquals(expected.name, actual.name);
 		assertEquals(expected.sellIn, actual.sellIn);
